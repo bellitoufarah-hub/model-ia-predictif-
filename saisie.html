@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Saisie TRS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<img src="images/logo.png">
+<h2>Saisie Production</h2>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h3>Informations opérateur</h3>
+
+<input id="nom" placeholder="Nom opérateur">
+
+<select id="section" onchange="loadPostes()">
+<option>Mécanique</option>
+<option>Soudage</option>
+<option>Finition</option>
+</select>
+
+<select id="poste"></select>
+
+<input id="produit" placeholder="Pièces produites">
+
+<input id="cycle" placeholder="Temps de cycle (min)">
+
+<input id="arret" placeholder="Temps arrêt (min)">
+
+<button onclick="saveData()">Enregistrer</button>
+
+</div>
+
+</div>
+
+<script src="js/saisie.js"></script>
+
+</body>
+</html>
